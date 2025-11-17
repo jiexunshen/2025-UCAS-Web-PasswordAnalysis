@@ -1,0 +1,287 @@
+--- YAHOO 密码结构模式及高频口令分析结果 ---
+
+模式说明：L=小写字母, U=大写字母, D=数字, S=符号, O=其他。数字表示连续出现的次数。
+
+============================================================
+Rank       Pattern (模式)         Total Count
+============================================================
+
+--- Rank 1: Pattern L6 (Count: 40693) ---
+Sub  Password                            Count
+---------------------------------------------
+1    qwerty                                172
+2    writer                                164
+3    monkey                                162
+4    shadow                                134
+5    tigger                                132
+6    jordan                                111
+7    dragon                                107
+8    purple                                106
+9    ashley                                103
+10   ginger                                100
+
+--- Rank 2: Pattern L8 (Count: 32438) ---
+Sub  Password                            Count
+---------------------------------------------
+1    password                              780
+2    sunshine                              205
+3    princess                              202
+4    iloveyou                              140
+5    baseball                              133
+6    whatever                              110
+7    michelle                              109
+8    superman                              106
+9    babygirl                              100
+10   computer                               98
+
+--- Rank 3: Pattern L7 (Count: 29129) ---
+Sub  Password                            Count
+---------------------------------------------
+1    welcome                               437
+2    freedom                               161
+3    michael                               160
+4    success                               126
+5    blessed                                92
+6    jasmine                                92
+7    charlie                                90
+8    writing                                86
+9    anthony                                85
+10   destiny                                84
+
+--- Rank 4: Pattern L6D2 (Count: 20315) ---
+Sub  Password                            Count
+---------------------------------------------
+1    jordan23                               38
+2    hawaii50                               32
+3    august85                               18
+4    qwerty12                               14
+5    redsox04                               13
+6    lollol11                               13
+7    soccer11                               12
+8    qwerty69                               11
+9    apollo13                               10
+10   winter21                               10
+
+--- Rank 5: Pattern L9 (Count: 16185) ---
+Sub  Password                            Count
+---------------------------------------------
+1    butterfly                              86
+2    elizabeth                              61
+3    alexander                              60
+4    chocolate                              49
+5    christian                              45
+6    swordfish                              44
+7    bismillah                              40
+8    makemoney                              39
+9    asdfghjkl                              37
+10   freelance                              34
+
+--- Rank 6: Pattern L8D2 (Count: 12631) ---
+Sub  Password                            Count
+---------------------------------------------
+1    password12                             24
+2    password11                             13
+3    unomocho88                             13
+4    xxxxxxxx22                             12
+5    kutakuta50                             12
+6    password01                             11
+7    ezequiel66                             10
+8    proverbs31                              9
+9    kittykat13                              8
+10   password69                              8
+
+--- Rank 7: Pattern D6 (Count: 12583) ---
+Sub  Password                            Count
+---------------------------------------------
+1    123456                               1667
+2    111111                                160
+3    123123                                101
+4    654321                                 88
+5    030379                                 82
+6    000000                                 71
+7    101471                                 59
+8    666666                                 51
+9    121212                                 51
+10   888888                                 46
+
+--- Rank 8: Pattern L7D1 (Count: 10620) ---
+Sub  Password                            Count
+---------------------------------------------
+1    trustno1                               95
+2    freedom1                               44
+3    michael1                               39
+4    blessed1                               39
+5    charlie1                               32
+6    loveyou2                               31
+7    anthony1                               31
+8    matthew1                               29
+9    welcome1                               28
+10   fuckyou2                               28
+
+--- Rank 9: Pattern L10 (Count: 10310) ---
+Sub  Password                            Count
+---------------------------------------------
+1    associated                            101
+2    basketball                             73
+3    tinkerbell                             48
+4    lombozchen                             39
+5    qwertyuiop                             33
+6    california                             30
+7    ilovejesus                             24
+8    moneymaker                             21
+9    mypassword                             21
+10   sweetheart                             21
+
+--- Rank 10: Pattern L7D2 (Count: 10281) ---
+Sub  Password                            Count
+---------------------------------------------
+1    chadski19                              19
+2    telekom30                              17
+3    thunder89                              14
+4    success09                              12
+5    success08                               8
+6    october11                               7
+7    kenshin54                               7
+8    colleen69                               7
+9    october13                               6
+10   content09                               6
+
+--- Rank 11: Pattern L4D4 (Count: 8394) ---
+Sub  Password                            Count
+---------------------------------------------
+1    abcd1234                               71
+2    asdf1234                               42
+3    rush2112                               42
+4    pass1234                               31
+5    qwer1234                               30
+6    jama9873                               29
+7    hubo0717                               12
+8    nusf6849                               11
+9    june1205                               10
+10   race1234                               10
+
+--- Rank 12: Pattern L5D2 (Count: 8174) ---
+Sub  Password                            Count
+---------------------------------------------
+1    catch22                                25
+2    lucky13                                21
+3    elajg23                                15
+4    rambo78                                14
+5    jesus01                                10
+6    ramit45                                10
+7    jesus77                                 8
+8    march22                                 7
+9    april22                                 7
+10   sweet16                                 6
+
+--- Rank 13: Pattern L5D3 (Count: 7123) ---
+Sub  Password                            Count
+---------------------------------------------
+1    blink182                               40
+2    hello123                               35
+3    india123                               28
+4    cyber123                               27
+5    jesus123                               26
+6    money123                               24
+7    jesus777                               24
+8    tiger123                               21
+9    happy123                               17
+10   angel123                               16
+
+--- Rank 14: Pattern L6D1 (Count: 7122) ---
+Sub  Password                            Count
+---------------------------------------------
+1    qwerty1                                28
+2    monkey1                                26
+3    writer1                                21
+4    lovely1                                21
+5    shadow1                                17
+6    purple1                                17
+7    ashley1                                15
+8    austin1                                15
+9    nicole1                                15
+10   number1                                15
+
+--- Rank 15: Pattern L5D1 (Count: 6452) ---
+Sub  Password                            Count
+---------------------------------------------
+1    jesus1                                 86
+2    money1                                 50
+3    hello1                                 44
+4    happy1                                 35
+5    angel1                                 34
+6    lucky1                                 28
+7    buddy1                                 24
+8    jesus7                                 21
+9    rocky1                                 20
+10   jason1                                 19
+
+--- Rank 16: Pattern L6D3 (Count: 6108) ---
+Sub  Password                            Count
+---------------------------------------------
+1    qwerty123                              51
+2    qazxsw123                              21
+3    isaiah614                              16
+4    karion626                              16
+5    daniel123                              12
+6    monkey123                              11
+7    colcol123                              11
+8    spsoft123                              10
+9    google123                              10
+10   shadow123                               9
+
+--- Rank 17: Pattern L8D1 (Count: 6053) ---
+Sub  Password                            Count
+---------------------------------------------
+1    password1                             139
+2    iloveyou2                              35
+3    testtest2                              31
+4    sunshine1                              26
+5    princess1                              25
+6    michelle1                              18
+7    fuzzball1                              18
+8    baseball1                              18
+9    superman1                              18
+10   football1                              16
+
+--- Rank 18: Pattern L6D4 (Count: 5880) ---
+Sub  Password                            Count
+---------------------------------------------
+1    fizzle1980                             20
+2    waprry9090                             12
+3    buddha5354                             10
+4    jadore1984                              9
+5    tygrus2000                              9
+6    cowboy1717                              8
+7    mypass2009                              8
+8    apsrlw8287                              6
+9    veejoe1123                              6
+10   redsox2004                              5
+
+--- Rank 19: Pattern L4D2 (Count: 5756) ---
+Sub  Password                            Count
+---------------------------------------------
+1    blue22                                 21
+2    love12                                 13
+3    blue42                                 12
+4    love23                                  8
+5    ebag01                                  8
+6    area51                                  7
+7    sexy69                                  7
+8    love22                                  7
+9    kobe24                                  7
+10   adam12                                  7
+
+--- Rank 20: Pattern L5D4 (Count: 5701) ---
+Sub  Password                            Count
+---------------------------------------------
+1    olimp1977                              10
+2    agung2408                               9
+3    tmnet1234                               8
+4    money2008                               7
+5    bking1288                               7
+6    allah2892                               7
+7    riyan2204                               6
+8    jones2003                               5
+9    blaze1221                               5
+10   jesus1234                               5
