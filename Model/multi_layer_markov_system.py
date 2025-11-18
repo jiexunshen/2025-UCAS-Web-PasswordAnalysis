@@ -1,36 +1,27 @@
-# multi_layer_markov.py
-from collections import Counter
-from tqdm import tqdm
+from collections import defaultdict
 
 class MultiLayerMarkovSystem:
     def __init__(self):
-        self.layers = {}
-        self.weights = {}
+        self.layers = []
 
-    def add_layer(self, name, model, weight):
-        self.layers[name] = model
-        self.weights[name] = weight
-        print(f"[INFO] Added layer '{name}' (weight={weight})")
+    def add_layer(self, name, model, weight=0.25):
+        self.layers.append({"name": name, "model": model, "weight": weight})
 
-    def generate_candidates(self, per_layer=300):
+    def generate_candidates(self, per_layer=200, max_len=12):
         all_candidates = {}
-        print("\n[INFO] Generating candidates for each layer...")
-        for name, model in self.layers.items():
-            print(f"  → {name} ({per_layer} samples)")
-            all_candidates[name] = model.generate(top_k=per_layer)
+        for layer in self.layers:
+            model = layer["model"]
+            candidates = model.generate(max_len=max_len, top_k=per_layer, show_progress=True)
+            all_candidates[layer["name"]] = candidates
         return all_candidates
 
-    def fuse_and_rank(self, candidates, top_n=500):
-        print(f"\n[FUSION] Fusing results from {len(self.layers)} layers...")
-        fused_scores = Counter()
-        total_candidates = sum(len(v) for v in candidates.values())
-
-        for layer_name, pw_list in tqdm(candidates.items(), desc="Scoring fusion", ncols=80):
-            model = self.layers[layer_name]
-            w = self.weights[layer_name]
-            for pw in pw_list:
-                fused_scores[pw] += w * model.score(pw)
-
-        ranked = [pw for pw, _ in fused_scores.most_common(top_n)]
-        print(f"[INFO] Fusion complete. Top-{top_n} passwords selected.")
-        return ranked
+    def fuse_and_rank(self, all_candidates, top_n=50):
+        scores = defaultdict(float)
+        for layer in self.layers:
+            name = layer["name"]
+            weight = layer["weight"]
+            model = layer["model"]
+            for pw in all_candidates.get(name, []):
+                scores[pw] += model.score(pw) * weight
+        ranked = sorted(scores.items(), key=lambda x: x[1], reverse=True)
+        return [pw for pw, _ in ranked[:top_n]]
