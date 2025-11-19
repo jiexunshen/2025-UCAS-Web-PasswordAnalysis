@@ -15,36 +15,36 @@
 - 生成攻击词典，格式为：
 
 ```
-`数据源_P{模式匹配数量}_M{马尔科夫数量}.txt`
+数据源_P{模式匹配数量}_M{马尔科夫数量}.txt
 ```
 
 ## 文件结构
 
 ```
-`├── AnalysisResults/        # 原始分析结果`
-`├── Data/                   # 提取后的分类密码`
-`│   ├── CSDN/`
-`│   │   ├── char.txt`
-`│   │   ├── keyboard.txt`
-`│   │   ├── pinyin.txt`
-`│   │   ├── english.txt`
-`│   ├── YAHOO/`
-`│       ├── char.txt`
-`│       ├── keyboard.txt`
-`│       ├── pinyin.txt`
-`│       ├── english.txt`
-`│`
-`├── Results/           # 最终生成的攻击字典文件`
-`│   ├── attack_dict_CSDN_Pxxxx_Mxxxx.txt`
-`│   ├── attack_dict_YAHOO_Pxxxx_Mxxxx.txt`
-`│`
-`├── Model/`
-`│   ├── markov_model.py`
-`│   ├── multi_layer_markov_system.py`
-`│`
-`├── data_extractor.py       # 数据抽取脚本`
-`├── main.py                 # 构建攻击字典主程序`
-`└── README.md`
+├── AnalysisResults/        # 原始分析结果
+├── Data/                   # 提取后的分类密码
+│   ├── CSDN/
+│   │   ├── char.txt
+│   │   ├── keyboard.txt
+│   │   ├── pinyin.txt
+│   │   ├── english.txt
+│   ├── YAHOO/
+│       ├── char.txt
+│       ├── keyboard.txt
+│       ├── pinyin.txt
+│       ├── english.txt
+│
+├── Results/           # 最终生成的攻击字典文件
+│   ├── attack_dict_CSDN_Pxxxx_Mxxxx.txt
+│   ├── attack_dict_YAHOO_Pxxxx_Mxxxx.txt
+│
+├── Model/
+│   ├── markov_model.py
+│   ├── multi_layer_markov_system.py
+│
+├── data_extractor.py       # 数据抽取脚本
+├── main.py                 # 构建攻击字典主程序
+└── README.md
 ```
 
 ## 使用教程
